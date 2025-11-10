@@ -344,7 +344,7 @@ Get-FileHash -Path "C:\Users\Administrator\Funnystuff\Fries.txt"
 
 ---
 
-## 🏁 Summary
+##  Summary
 All commands from the challenge are included with both original and used forms.  
 Every on-screen column and every parameter is explained in plain language.  
 File integrity is shown with hash changes before and after editing.
