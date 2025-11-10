@@ -63,6 +63,15 @@ Get-Process
 - **Responding** — for apps with windows: True = reacting, False = frozen.
 - **Path** — full file path to the program’s EXE. (May need admin to see.)
 
+<img width="1023" height="767" alt="Get-Process command" src="https://github.com/user-attachments/assets/622ec23d-a435-4ded-99c1-d4395a2905d5" />
+
+
+
+<img width="1012" height="757" alt="getprocess svchost" src="https://github.com/user-attachments/assets/51533959-07d0-4ea9-a3e7-a93da2850ec5" />
+
+
+<img width="1022" height="716" alt="getprocess extra work" src="https://github.com/user-attachments/assets/6ea18bc9-1c1f-448a-ae65-6b1681b4ec0c" />
+
 ---
 
 ### B) Show the 10 most CPU-hungry processes
@@ -159,6 +168,12 @@ Get-ChildItem
 - **Length** — file size in bytes (directories show blank or 0).  
 - **Name** — item name (file or directory).
 
+
+<img width="1023" height="767" alt="get childitem part 1" src="https://github.com/user-attachments/assets/d5554d07-f625-4d3a-be06-020501613edd" />
+
+
+<img width="1022" height="763" alt="get childitem part 2" src="https://github.com/user-attachments/assets/d7334b06-5e83-4949-85b2-f4d167cd960a" />
+
 ---
 
 ### B) Move into a directory
@@ -208,6 +223,9 @@ New-Item -Path "C:\Users\Administrator\Funnystuff" -ItemType Directory
 - **-ItemType** — tells the kind of thing to make.  
 - **Directory** — the kind of thing is a directory.
 
+
+<img width="1025" height="472" alt="newitemtype" src="https://github.com/user-attachments/assets/1d42c3d2-876b-4769-bb56-708ebea30365" />
+
 ---
 
 ### B) Create a file
@@ -246,6 +264,9 @@ Get-Content -Path "C:\Users\Administrator\Funnystuff\Cheetos"
 
 **Meaning:** show the lines inside the file.
 
+
+<img width="1106" height="822" alt="creating two newitemtype with content" src="https://github.com/user-attachments/assets/4e1959f3-3ae8-45db-a527-9c4b810d809b" />
+
 ---
 
 ## 4) File Integrity — `Get-FileHash`
@@ -267,6 +288,9 @@ Get-FileHash -Path "C:\Users\Administrator\Funnystuff\Fries.txt"
 - **Hash** — the fingerprint itself (a long hex string).  
 - **Path** — the file that was scanned.
 
+
+<img width="1026" height="127" alt="getfilehashh" src="https://github.com/user-attachments/assets/6714bc5e-bd61-499e-a9bb-843e072bdff7" />
+
 ---
 
 ### B) Change the file (append more text)
@@ -284,6 +308,9 @@ Get-FileHash -Path "C:\Users\Administrator\Funnystuff\Fries.txt"
 ```
 
 **Meaning:** compute a new hash. If it changed, the file was modified.
+
+
+<img width="1022" height="761" alt="getfilehashh part2" src="https://github.com/user-attachments/assets/50801ee8-a046-4dce-a2a9-75c72b39d792" />
 
 ---
 
@@ -323,3 +350,53 @@ Every on-screen column and every parameter is explained in plain language.
 File integrity is shown with hash changes before and after editing.
 
 ---
+
+**What This Project Is All About**
+
+This GitHub project is part of a Success Coaching Challenge focused on learning and practicing PowerShell — a tool that helps control and manage computers by typing commands instead of clicking buttons.
+
+The main goal of this challenge is to learn how to think like a system administrator by performing real tasks: checking what programs are running, moving around directories, creating files, writing text inside them, and checking if those files have changed.
+
+Throughout this project, every step was done inside PowerShell ISE, a place where commands can be written, tested, and saved as scripts.
+
+---
+
+**What Was Done in This Challenge**
+
+Get-Process was used to look at all the programs and background tasks running on the computer. It also showed details like CPU usage, memory, process ID, and more.
+
+Sort-Object and Select-Object were used to organize and display the top programs using the most CPU power.
+
+Where-Object helped filter specific programs, like showing only “svchost” or those using a lot of CPU.
+
+Get-ChildItem and Set-Location were used to explore different directories on the computer. This made it possible to see files and move into other locations.
+
+New-Item was used to create a brand-new directory and file.
+
+Add-Content was used to write words inside that file.
+
+Get-Content was used to read the text that was written.
+
+Get-FileHash was used to check if the file changed after adding new text — this step proved how PowerShell can help check data integrity.
+
+---
+
+**What This Project Teaches**
+
+How to see what a computer is doing behind the scenes.
+
+How to move between directories and understand file structures.
+
+How to create and manage files with simple commands.
+
+How to check if files were changed by comparing their digital fingerprints (hashes).
+
+How to read and understand columns and parameters shown by PowerShell commands, like CPU, ID, Handles, Mode, and Length.
+
+---
+
+**Why This Project Matters**
+
+This project builds the foundation of what real system administrators and IT professionals do daily. Every command practiced here helps build real-world confidence in using PowerShell.
+
+By completing this challenge, it becomes clear how simple commands can help manage files, monitor processes, and keep systems secure. Even for someone brand new to IT, this project makes PowerShell feel simple and fun to learn.
