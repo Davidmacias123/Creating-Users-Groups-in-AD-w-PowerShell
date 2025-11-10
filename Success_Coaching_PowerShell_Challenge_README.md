@@ -1,7 +1,7 @@
-# 💻 Success Coaching Challenge
+# Success Coaching Challenge
 ## Introduction to PowerShell & PowerShell ISE
 
-## 🌟 Purpose
+##  Purpose
 A simple, hands-on walkthrough for PowerShell basics that real system helpers use every day:
 - see running programs  
 - move through directories  
@@ -12,7 +12,7 @@ Every command and on-screen column is explained in simple, everyday words.
 
 ---
 
-## 🎯 Learning Objectives
+##  Learning Objectives
 1. Navigate directories and list contents.  
 2. Observe running processes and understand each column.  
 3. Create directories and files; write and read text.  
@@ -21,7 +21,7 @@ Every command and on-screen column is explained in simple, everyday words.
 
 ---
 
-## 🧰 Scenario
+##  Scenario
 A small “system health and integrity” report is needed:
 - list processes,  
 - show directory items,  
@@ -30,7 +30,7 @@ A small “system health and integrity” report is needed:
 
 ---
 
-# 🪜 Challenge Steps (Original vs. Used Commands + Deep Explanations)
+#  Challenge Steps (Original vs. Used Commands + Deep Explanations)
 
 ---
 
@@ -287,7 +287,7 @@ Get-FileHash -Path "C:\Users\Administrator\Funnystuff\Fries.txt"
 
 ---
 
-# 🧱 Operators and Symbols (Plain Words)
+#  Operators and Symbols (Plain Words)
 - **`|` (pipe)** — “and then”; send results from left to right.  
 - **`{}`** — rule or mini-script.  
 - **`$_`** — the current row in the pipeline.  
@@ -302,7 +302,7 @@ Get-FileHash -Path "C:\Users\Administrator\Funnystuff\Fries.txt"
 
 ---
 
-## ✅ Full command list covered
+##  Full command list covered
 - Get-Process  
 - Sort-Object  
 - Select-Object  
